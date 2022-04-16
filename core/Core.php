@@ -3,6 +3,9 @@
  * Classe para o núcleo do sistema - iniciar (método run())
  * 
  */
+
+namespace core;
+
 class Core {
     public function run() {
         

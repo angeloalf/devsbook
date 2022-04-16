@@ -1,4 +1,7 @@
 <?php
+
+use core\Model;
+
 class Anuncios extends Model {
     public function getQuantidades(){
         $sql = "SELECT * FROM anuncios";

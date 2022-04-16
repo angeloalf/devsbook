@@ -1,5 +1,7 @@
 <?php
 
+namespace core;
+
 class Model {
     protected $con;
  

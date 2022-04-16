@@ -5,6 +5,8 @@
  * 
  */
 
+use \core\Controller;
+
 class galeriaController extends Controller {
     public function index() {
        $dados = array(
@@ -28,13 +30,7 @@ class galeriaController extends Controller {
                 
         $this->loadTemplate('galeria', $dados);        
     }
-    
-
-    
-    
-    
-    
-    
+     
 } // fim da classe homeControlller
 
 
