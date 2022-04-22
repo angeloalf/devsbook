@@ -6,6 +6,7 @@ require 'routes.php';
 // autoload do composer
 require 'vendor/autoload.php';
 
+// autoload arquivos - core usa autoload do composer psr4
 spl_autoload_register(function($class) {
     if (file_exists('controllers/'.$class.'.php')) {
        require 'controllers/'.$class.'.php'; 

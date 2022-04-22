@@ -4,6 +4,11 @@ namespace core;
 
 class Controller {
     
+    protected function redirect($url) {
+        header('Location:'.BASE_URL.$url);
+        exit;
+    }
+    
     public function loadView($viewName, $viewData = array()) {
         extract($viewData); // pega valores do array e transforma em variáveis. ex.: quantidade => 5, fica $quantidade = 5;
         require 'views/'.$viewName.'.php';

@@ -2,9 +2,7 @@
     "require": { },
     "autoload": {
         "psr-4": {
-            "core\\": "core/",
-            "controllers\\": "controllers/",
-            "models \\": "models/"
+            "core\\": "core/"
         }
     }
 } 

@@ -1,24 +1,28 @@
 <?php
+/* 
+ * Controller página inicial
+ * @versão: 1.0.0
+ * @autor: Angelo Luis Ferreira
+ * @email: angelo.alf@gmail.com
+ * @alias: byALF
+ * @date: 15/04/2022
+ * @packge: devsbook
+ * 
+ */
+
 use core\Controller;
 
 class homeController extends Controller {
+    
+    public function __construct() {
+       $this->redirect('entrar');
+    }
+    
     public function index() {
-        $anuncios = new Anuncios();
-        $users = new Users; 
-        $dados = array(
-            'quantidade'=> $anuncios->getQuantidades(),
-            'nome' => $users->getName()
-        );
+        $data = array();
         $this->loadTemplate('home', $dados);
     }
-    
-    public function login() {
-        echo "Faça o login";
-        echo '<br>';
-    }
-    
-    
-    
+        
     
 } // fim da classe homeControlller
 

@@ -3,5 +3,5 @@
 
 # Etapa 1: Estrutura MVC com sistema de rotas
 
-# Etapa 2: Configura o config.php e instala o composer
+# Etapa 2: Seta o config.php, instala o composer e cria o login controller
 
